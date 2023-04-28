@@ -19,9 +19,6 @@ def varianza(lista_edades):
 def desviacion(lista_edades):
 	return stats.stdev(lista_edades)
 
-def coeficienteVariacion():
-	return
-
 if __name__ == "__main__":
 	lista_edades = []
 	
