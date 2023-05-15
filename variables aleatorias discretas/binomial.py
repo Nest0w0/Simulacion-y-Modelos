@@ -17,6 +17,12 @@ def varianza_binomial(num_intentos, prob_exito):
 	return num_intentos*prob_exito*(1 - prob_exito)
 
 if __name__ == '__main__':
-	print(probabilidad_binomial(4, 3, 0.8))
-	print(esperanza_binomial(4, 0.8))
-	print(varianza_binomial(4, 0.8))
+	num_intentos = 4
+	num_exitos_esperados = 3
+	prob = 0.8
+	res = probabilidad_binomial(num_intentos, num_exitos_esperados, prob)
+	print("La probabilidad binomial con {} intentos, {} exitos esperados y una probabilidad de exito de {} es: {}".format(num_intentos, num_exitos_esperados, prob, res))
+	res = esperanza_binomial(4, 0.8)
+	print("La esperanza binomial con {} intentos y una probabilidad de exito de {} es: {}".format(num_intentos, prob, res))
+	res = varianza_binomial(4, 0.8)
+	print("La varianza binomial con {} intentos y una probabilidad de exito de {} es: {}".format(num_intentos, prob, res))

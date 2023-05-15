@@ -17,6 +17,11 @@ def varianza_poisson(frecuencia):
 
 
 if __name__ == '__main__':
-	print(probabilidad_poisson(6,5))
-	print(esperanza_poisson(5))
-	print(varianza_poisson(5))
+	num_ocurrencias_esperadas = 6
+	frecuencia = 5
+	res = probabilidad_poisson(num_ocurrencias_esperadas,frecuencia)
+	print("La probabilidad de Poisson para la ocurrencia de {} eventos cuando normalmente ocurren {} es: {}".format(num_ocurrencias_esperadas, frecuencia, res))
+	res = esperanza_poisson(frecuencia)
+	print("La esperanza de Poisson para eventos con ocurrencia {} es: {}".format(frecuencia, res))
+	res = varianza_poisson(frecuencia)
+	print("La varianza de Poisson para eventos con ocurrencia {} es: {}".format(frecuencia, res))

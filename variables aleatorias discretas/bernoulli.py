@@ -8,6 +8,11 @@ def varianza_bernoulli(prob_exito):
 	return prob_exito*(1 - prob_exito)
 
 if __name__ == '__main__':
-	print(probabilidad_bernoulli(1, 0.3))
-	print(esperanza_bernoulli(0.7))
-	print(varianza_bernoulli(0.7))
+	prob = 0.7
+	exito = 1
+	res = probabilidad_bernoulli(exit, prob)
+	print("La probabilidad de bernoulli con exito en {} y probabilidad de exito en {} es: {}".format(prob,exito,res))
+	res = esperanza_bernoulli(prob)
+	print("La esperanza de bernoulli con probabilidad de exito {} es {}".format(prob, res))
+	res = varianza_bernoulli(prob)
+	print("La varianza de bernoulli con probabilidad de exito {} es {}".format(prob, res))
